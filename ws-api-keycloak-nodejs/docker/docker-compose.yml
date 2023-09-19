@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  backend:
+    container_name: backend
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile 
+    ports:
+      - 3000:3000
+    networks: 
+      - teste
+  frontend:
+    container_name: frontend
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    networks: 
+      - teste
+
+# networks:
+#   default:
+#     name: teste
+#     external: true
+networks:
+  teste:
+    name: teste
+    driver:
+      bridge
+
+# docker compose -f docker-compose.yml -p meuapp up -d
+# docker compose -f docker-compose.yml -p meuapp down

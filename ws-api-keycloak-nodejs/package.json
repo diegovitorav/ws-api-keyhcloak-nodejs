@@ -1,0 +1,18 @@
+{
+  "name": "ws-api-keycloak-nodejs",
+  "version": "1.0.0",
+  "description": "ws-api-keycloak-nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "author": "Diego Vitor",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "keycloak-connect": "^22.0.3"
+  }
+}

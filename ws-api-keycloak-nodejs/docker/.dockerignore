@@ -1,0 +1,6 @@
+# Ignore
+docker-compose.yml
+Readme.md
+frontend
+backend
+docker-compose-keycloak-postgres.yml
